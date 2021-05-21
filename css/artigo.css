@@ -58,12 +58,23 @@
   list-style-type: none;
 }
 
+.rodape_assinatura{
+    max-width: 170px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    clear: both;
+    margin-top: 5px;	
+    vertical-align: top;
+    border-radius: 7px;  
+}
+
 .imagemPerfil{
-    max-width: 300px;
+    max-width: 350px;
     max-height:450px;
     width: auto;
     height: auto;
     clear: both;
     margin-top: 20px;	
-    vertical-align: top
+    vertical-align: top;
 }
