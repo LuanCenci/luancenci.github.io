@@ -45,6 +45,7 @@
 }
 
 .rodape a{
+	text-decoration: none;
 	font-family: "Lucida Console";
 	font-size: 11pt;
 	color:white;
