@@ -1,0 +1,168 @@
+.campconte{
+    width:610px;
+    min-height:250px;
+    height:380px;
+    left:305px;
+    top:10px;
+    border-width: 1px;
+    padding: 0px;
+  }
+.campconte iframe{
+    width:1325px;    
+    height:780px;
+    left: 0px;
+    top:0px;
+	position:static;
+}
+
+h1,h2,h3{
+    font-family: Ubuntu,'Ubuntu Mono';
+	color: #666666;
+	text-align:center;	
+	}
+	
+
+.img{
+   max-width:653px;
+   max-height:367px;
+   min-width: initial;
+   min-height: initial;
+   object-position: center;
+   }
+   
+ p{
+ font-size:20px;
+ position: static;
+}
+
+ 
+ 
+ ul,li{
+    text-align:center; 
+ }
+ 
+ div.figura {
+  display:table;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+
+}
+div.figura p {   
+  font-family: Fenix;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #808080;
+}
+
+.footer {
+  color:red; 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+  font-size:16px; 
+  letter-spacing:1px; 
+  position:absolute; 
+  top:725px; 
+  width:1399px; 
+  text-align:center;
+  }
+  
+.footer a {
+  color:#777f76; 
+  text-decoration:none;
+  color:green;
+  }
+  
+.footer .pipe {
+   color:#393939;
+   } 
+   
+.span4 .span3{
+    text-align: center;
+        
+}
+
+.hero-unit h2 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: left;
+}
+ .link{
+    font-family: 'Tempus Sans ITC';
+    text-decoration-color: red;
+}
+
+.row-fluid{
+    position:static;
+}
+
+#titulo_StarWars{
+    font-family: 'Star Jedi';
+    color: #393939;
+}
+
+
+.titulo_futurama{
+    font-family: 'Futurama bold Font';
+    color: #ff6a00;
+}
+
+.link_patrocinadores {
+    font-family: Ubuntu,'Ubuntu Mono';
+    color: #f00;
+    font-size: initial;
+}
+
+.link_conheca {
+    font-family: Ubuntu,'Ubuntu Mono';
+    color: #0026ff;
+    font-size: medium;
+}
+
+.link_chape {
+    font-family: Ubuntu,'Ubuntu Mono';
+    color: #006400;
+    font-size: medium;
+}
+
+link_sega {
+    font-family: 'SEGA LOGO FONT';
+    color: #0026ff;
+    font-size: medium;
+}
+
+titulo_sega_cosmos {
+    font-family: 'SEGA LOGO FONT';
+    color: #f00;
+    font-size: medium;
+}
+
+iframe {
+    border:0;
+    border-color: #fff;
+    border-width: 0; 
+}
+
+.titulo_textos {
+    font-family: Ubuntu,'Ubuntu Mono';
+    color: #393939;
+}
+
+.destaque{
+ font-family: Ubuntu,'Ubuntu Mono';
+ background-color: #808080;
+ color: #fff;
+ font-style: italic;
+ border: 4px groove #f00; 
+ margin-top:auto 10% auto;
+ margin-left: initial 10% auto ;
+ margin-right: initial 10% auto;
+}
+
+
+.hero .media img, .hero .media video {
+    margin-top: -1.875%;
+}
+
+

@@ -1,0 +1,102 @@
+﻿html{
+    padding:0;
+	margin:0;
+}
+
+body{
+    padding:0'
+    margin:0;
+    
+	
+}
+
+.container{
+    width:960px;
+	display:block;
+	margin:0 auto;
+}
+
+/* id chamado logo */
+#logo{
+   color: yellow;
+   display:block;
+   float:left;
+   background-color:red;
+   font-family:Tempus Sans ITC;
+}
+
+#logo a {
+   color: yellow;
+   text-decoration:none;
+}
+
+.span2 a {
+  color:red;
+  font-family:Ubuntu,'Ubuntu Mono';
+}
+
+.container header{
+     display:block;
+	 float:left;
+	 width:100%;
+}
+
+.container header ul{
+    display:block;
+	float:left;
+	margin: 32px 0 0 20px;
+}
+
+.container header ul li {
+      display: block;
+	  float: left;
+	  margin-right: 20px;
+}
+
+.container header ul li a{
+        color:blue;
+		text-decoration: none;
+}
+
+#titulo_crc {
+    font-family: DS-Digital;
+    color: #b6ff00;
+    background-color: #000;
+    text-align: center;
+}
+
+#titulo_cbd{
+    font-family:'Futurama bold Font';
+    color: #b6ff00;
+    background-color: #f00;
+    text-align: center;
+}
+
+#titulo_cs{
+    font-family:'Futurama bold Font';
+    color: #0026ff;
+    background-color: #fff;
+    text-align: center;
+}
+
+#titulo_cd{
+    font-family:Ubuntu,'Ubuntu Mono';
+    color: #f00;
+    background-color: #fff;
+    text-align: center;
+}
+
+#titulo_pulsar{
+    font-family:'Star Jedi';
+    color:#FFFF00;
+    background-color: #000;
+    text-align: center;
+}
+
+
+#titulo_inter{
+    font-family:Arial;
+    color:f00;
+    background-color: #fff;
+    text-align: center;
+}
