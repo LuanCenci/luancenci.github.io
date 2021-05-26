@@ -40,6 +40,7 @@ body {
     font-size: medium;
     text-align: left;
     font-weight: bold;
+    margin-left: 10%;
 }
 
 .texto
@@ -47,15 +48,14 @@ body {
     font-family: Arial;
     font-size: 14pt;
     text-align: justify;
-    color: #000;
-    margin-left: 20%;
-    margin-right: 20%;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: normal;
 }
 
 .img
 {
-    object-position: center;
     max-height: 367px;
     max-width: 653px;
     min-height: 180px;
@@ -96,4 +96,8 @@ div.figura p
 .tabelas caption {
     font-size: 10pt;
     font-family: Helvetica;    
+}
+
+pre{
+    margin-left: 10%;
 }

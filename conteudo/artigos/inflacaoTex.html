@@ -1,66 +1,166 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Análise por utilização de regressão Linear da interferência da inflação pós ditadura militar nos quadrinhos da série Tex Coleção</title>
-<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css"/>
-<link href="../../css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
-<link href="../../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../css/estilo_artigo.css" rel="stylesheet" type="text/css" />
-<script src="../../js/bootstrap.js" type="text/javascript"> </script>
-<script src="../../js/bootstrap.min.js" type="text/javascript"> </script>
-</head>
-<body>
-     <div class="container">
-        <div class="row">
-             <div class="span3"></div>
-             <div class="span6">
-               <h2 id="titulo">Análise por utilização de regressão Linear da interferência da inflação pós ditadura militar nos quadrinhos da série Tex Coleção</h2>
-               <p id = "nomes">Luan Cenci</p>
-               <p id="dados">Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira<br> 89560-000 - Videira - SC - Brasil.</p>
-               <p id="email">lcencicolo@gmail.com,lcencicolo@hotmail.com</p>
-               <p class="abstract"><b>Abstract.</b>This article will demonstrate how the inflation of the 80s could have made the prices of products higher. Through the linear regression we will see how the price of the tables went up during that period.</p>
-               <p class="abstract"><b>Resumo.</b>Este artigo visa demonstrar como a inflação dos anos oitenta pode ter feito com que os preços dos produtos tivessem aqueles valores enormes. Através de regressão linear veremos como o preço dos quadrinhos subiu durante o período.</p>
-               <h3>Introdução</h3>
-               <p class="texto">Nos anos de 1980, começou um movimento político chamado de abertura pelo regime militar que comandava o Brasil, desde os anos de 1964. Em 1985 o comando já havia passado para o então presidente José Sarney. Pós crise do petróleo dos anos 70 e o esfriamento da guerra fria em si, o então governo que era bastante dependente de investimentos estrangeiros durante o período em que se mantiveram no poder viu o seu principal aliado a reduzir rapidamente os empréstimos que fazia ao país. Os militares prevendo a diminuição da guerra fria entre Estados Unidos e União Soviética, iniciou uma abertura lenta no final dos anos 70 culminando com a entrega total para um governo democrático em 1985.</p>
-               <p class="texto">Naquela época a editora Rio Gráfica decidiu lançar uma série de quadrinhos, que tinha como público alvo os fãs da série em quadrinhos da Editora italiana Sergio Bonelli, apesar de depois de a empresa se tornar parte do grupo Globo. A série Tex Coleção é publicada até hoje só que através da Mythos editora. Na época como muitas outras empresas a mesma sofreu os problemas que a inflação do momento em um mercado causava aos produtos recém-fabricados como revistas em quadrinhos.</p>
-               <img src="http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=31421&path=globo/t/te00510102.jpg&w=400&h=529" alt="segunda edição de Tex Coleção" height="350" width="250" class="img">
-               <p>Figura1. Segunda capa de Tex Coleção.</p>
-               <h3>1.Regressão Linear</h3>
-               <p class="texto">Em alguma situações, interessa-nos saber se é possível usar uma das variáveis para predizer o valor de outra. Suponhamos que queiramos avaliar o possível preço de uma revista em quadrinhos. Para os próximos dois meses. É dificil predizer diretamente tal preço.</p>
-               <p class="texto">Em economia, admite-se que a inflação de determinado período pode afetar o preço de produtos vendidos mais a frente. </p>
-               <p class="texto">Ema boa maneira para determinar a influência da inflação sobre um determinado período é montando um gráfico, onde traçaremos no eixo X o período de tempo e sobre o eixo Y a inflação do  mesmo tempo que estamos analisando. Este tipo de gráfico é chamado de <b> diagrama de dispersão</b>.</p>
-                <img src="../../img/plot1.png" alt="grafico de dispersão" class="img"><br><br>
-                <p class="texto">Este gráfico acima representa o preço que as revistas em quadrinhos do Tex tiveram na época, podemos perceber que teve uma grande alta da metade daquele período até o final. Impulsionado por uma inflação que chegou ao final de 1987 passar de 1000% como mostra este outro gráfico.</p>
-                <img src="../../img/plot2.png" alt="grafico de dispersão" class="img"><br><br>
-               <h3>3.Racket</h3>
-               <p class="texto">Muitas linguagens podem ser utilizadas para calcular a regressão linear de um período. Como o R, Python, Scala e Julia. Mas o Racket é uma das linguagens derivadas do Lisp e Scheme. Por ser uma linguegem puramente funcional e possibilitar mais rapidamente a efetuação de cálculos.Linguagens funcional são mais utilizadas para cálculos matemáticos e como este realizados aqui.</p>
-               <pre>(define (sum xs) (reduce + 0 xs))
-(define (square x) (* x x))
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Análise por utilização de regressão Linear da interferência da inflação pós ditadura militar nos quadrinhos da série Tex Coleção</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.rtl.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.rtl.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-reboot.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-reboot.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-reboot.rtl.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-reboot.rtl.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-utilities.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-utilities.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-utilities.rtl.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-utilities.rtl.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.rtl.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.rtl.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/estilo_artigo.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../../css/artigo.css" media="screen">
+		<script type="text/javascript" src="../../js/bootstrap.bundle.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.esm.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.esm.min.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.min.js"></script>     
+	</head>
+	</head>
+    <body>
+	    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #4b87ac;">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="../../index.html">Luan Cenci</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link active" href="../../perfil.html">Perfil</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="../formulasinformulas/index_formulas_in_formulas.html">Formulas in Formulas</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="index_artigos.html">Artigos</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="../anotacoes/index_anotacoes.html">Anotações</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav><br><br>
+		 <div class="container">
+			<div class="row">
+				 <div class="col-1"></div>
+				 <div class="col-10">
+				   <h2 id="titulo">Análise por utilização de regressão Linear da interferência da inflação pós ditadura militar nos quadrinhos da série Tex Coleção</h2>
+				   <p id = "nomes">Luan Cenci</p>
+				   <p id="dados">Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira<br> 89560-000 - Videira - SC - Brasil.</p>
+				   <p id="email">lcencicolo@gmail.com,lcencicolo@hotmail.com</p>
+				   <p class="abstract"><b>Abstract.</b>This article will demonstrate how the inflation of the 80s could have made the prices of products higher. Through the linear regression we will see how the price of the tables went up during that period.</p>
+				   <p class="abstract"><b>Resumo.</b>Este artigo visa demonstrar como a inflação dos anos oitenta pode ter feito com que os preços dos produtos tivessem aqueles valores enormes. Através de regressão linear veremos como o preço dos quadrinhos subiu durante o período.</p>
+				   <h3 class="subtitulo">Introdução</h3>
+				   <p class="texto">Nos anos de 1980, começou um movimento político chamado de abertura pelo regime militar que comandava o Brasil, desde os anos de 1964. Em 1985 o comando já havia passado para o então presidente José Sarney. Pós crise do petróleo dos anos 70 e o esfriamento da guerra fria em si, o então governo que era bastante dependente de investimentos estrangeiros durante o período em que se mantiveram no poder viu o seu principal aliado a reduzir rapidamente os empréstimos que fazia ao país. Os militares prevendo a diminuição da guerra fria entre Estados Unidos e União Soviética, iniciou uma abertura lenta no final dos anos 70 culminando com a entrega total para um governo democrático em 1985.</p>
+				   <p class="texto">Naquela época a editora Rio Gráfica decidiu lançar uma série de quadrinhos, que tinha como público alvo os fãs da série em quadrinhos da Editora italiana Sergio Bonelli, apesar de depois de a empresa se tornar parte do grupo Globo. A série Tex Coleção é publicada até hoje só que através da Mythos editora. Na época como muitas outras empresas a mesma sofreu os problemas que a inflação do momento em um mercado causava aos produtos recém-fabricados como revistas em quadrinhos.</p>
+				   <div class="text-center">
+				   <figure class="figure">
+					  <img src="http://www.guiadosquadrinhos.com/edicao/ShowImage.aspx?id=31421&path=globo/t/te00510102.jpg&w=400&h=529" class="figure-img img-fluid rounded cardTamanho" alt="segunda edição de Tex Coleção">
+					  <figcaption class="figure-caption">Figura1. Segunda capa de Tex Coleção.</figcaption>
+				   </figure>
+				   </div>
+				   <h3 class="subtitulo">1.Regressão Linear</h3>
+				   <p class="texto">Em alguma situações, interessa-nos saber se é possível usar uma das variáveis para predizer o valor de outra. Suponhamos que queiramos avaliar o possível preço de uma revista em quadrinhos. Para os próximos dois meses. É dificil predizer diretamente tal preço.</p>
+				   <p class="texto">Em economia, admite-se que a inflação de determinado período pode afetar o preço de produtos vendidos mais a frente. </p>
+				   <p class="texto">Ema boa maneira para determinar a influência da inflação sobre um determinado período é montando um gráfico, onde traçaremos no eixo X o período de tempo e sobre o eixo Y a inflação do  mesmo tempo que estamos analisando. Este tipo de gráfico é chamado de <b> diagrama de dispersão</b>.</p>
+				   <div class="text-center">
+				   <figure class="figure">
+					  <img src="../../imagem/plot1.png" class="figure-img img-fluid rounded cardTamanho" alt="grafico de dispersão">
+					  <figcaption class="figure-caption">Gráfico mostra crescimento da Inflação no período.</figcaption>
+				   </figure>
+				   </div>
+				   <p class="texto">Este gráfico acima representa o preço que as revistas em quadrinhos do Tex tiveram na época, podemos perceber que teve uma grande alta da metade daquele período até o final. Impulsionado por uma inflação que chegou ao final de 1987 passar de 1000% como mostra este outro gráfico.</p>
+				   <div class="text-center">
+				   <figure class="figure">
+					  <img src="../../imagem/plot2.png" class="figure-img img-fluid rounded cardTamanho" alt="grafico de dispersão">
+					  <figcaption class="figure-caption">Gráfico mostra crescimento do preço de revistinha no período.</figcaption>
+				   </figure>
+				   </div>
+				   <h3 class="subtitulo">3.Racket</h3>
+				   <p class="texto">Muitas linguagens podem ser utilizadas para calcular a regressão linear de um período. Como o R, Python, Scala e Julia. Mas o Racket é uma das linguagens derivadas do Lisp e Scheme. Por ser uma linguegem puramente funcional e possibilitar mais rapidamente a efetuação de cálculos.Linguagens funcional são mais utilizadas para cálculos matemáticos e como este realizados aqui.</p>
+				   <pre>(define (sum xs) (reduce + 0 xs))
+	(define (square x) (* x x))
 
-(define (linear-regression x y)
-    (let* ([mean_x       (/ (sum x) (length x))]
-           [mean_y       (/ (sum y) (length x))]
-           
-           [numerator    (sum (map (λ(xi yi) (* (- xi mean_x) (- yi mean_y))) x y))]  
-           
-           [denominator  (sum (map (λ(xi) (square (- xi mean_x))) x))]
-           
-           [beta         (/ numerator denominator)]
-           
-           [alpha        (- mean_y (* beta mean_x))])
-      
-      (list beta alpha)))
-               </pre>
-              <p class="texto">Este código acima apresenta a forma de se calcular uma regressão linear, esta função nos retorna como resultado o Coeficiente angular e o intercepto, que serão usados para fazer a reta regressão que mostrará a tendencia de que os valores calculados por nós  irão assumir. Caso a reta de regressão assuma um valor acima de zero, a tendencia é de subida, Se ocorrer o contrário caso a reta de gressão assuma um valor negativo, a tendencia será de queda. Como mostra o gráfico de dispersão abaixo:</p>
-               <img src="../../img/Rplot.png" alt="gráfico Com a reta de regressão linear"><br><br>
-               <h3>Conclusão</h3>
-               <p class="texto">Em muitos casos podemos utilizar a regressão linear, mas as formas que mais pode se encaixar nesre trabalho do que a regressão linear simples, pode ser a regressão linear dupla, que podemos calcular mais de uma variável independente, como a inflação e a influencia no preço em sí das revistinha de Tex.</p>
-             <h3>Referencias</h3>
-             <p class="texto">Downing, Douglas. Estatística Aplicada. 3 edição, São Paulo: Saraiva, 2011.</p>
-             </div>
-             <div class="span1"></div>
-        </div>
+	(define (linear-regression x y)
+		(let* ([mean_x       (/ (sum x) (length x))]
+			   [mean_y       (/ (sum y) (length x))]
+			   
+			   [numerator    (sum (map (λ(xi yi) (* (- xi mean_x) (- yi mean_y))) x y))]  
+			   
+			   [denominator  (sum (map (λ(xi) (square (- xi mean_x))) x))]
+			   
+			   [beta         (/ numerator denominator)]
+			   
+			   [alpha        (- mean_y (* beta mean_x))])
+		  
+		  (list beta alpha)))
+				   </pre>
+				  <p class="texto">Este código acima apresenta a forma de se calcular uma regressão linear, esta função nos retorna como resultado o Coeficiente angular e o intercepto, que serão usados para fazer a reta regressão que mostrará a tendencia de que os valores calculados por nós  irão assumir. Caso a reta de regressão assuma um valor acima de zero, a tendencia é de subida, Se ocorrer o contrário caso a reta de gressão assuma um valor negativo, a tendencia será de queda. Como mostra o gráfico de dispersão abaixo:</p>
+				   <div class="text-center">
+				   <figure class="figure">
+					  <img src="../../imagem/Rplot.png" class="figure-img img-fluid rounded" alt="gráfico Com a reta de regressão linear">
+					  <figcaption class="figure-caption">Gráfico mostra crescimento do preço de revistinha no período.</figcaption>
+				   </figure>
+				   </div><br><br>
+				  
+				   <h3 class="subtitulo">Conclusão</h3>
+				   <p class="texto">Em muitos casos podemos utilizar a regressão linear, mas as formas que mais pode se encaixar nesre trabalho do que a regressão linear simples, pode ser a regressão linear dupla, que podemos calcular mais de uma variável independente, como a inflação e a influencia no preço em sí das revistinha de Tex.</p>
+				 <h3 class="subtitulo">Referencias</h3>
+				 <p class="texto">Downing, Douglas. Estatística Aplicada. 3 edição, São Paulo: Saraiva, 2011.</p>
+				 </div>
+				 <div class="col-1"></div>
+			</div>
      </div>
-</body>
+		
+		<footer class="rodape">
+			<div class="container">
+			  <div class="row">
+				<div class="col">
+					<nav> 
+					<p class="rodape_texto h3">Navegue no site</p> 
+						<ul> 
+							<li><a href="../../index.html">Home</a></li>  
+							<li><a href="../../perfil.html">Perfil</a></li>
+							<li><a href="../formulasinformulas/index_formulas_in_formulas.html">Formulas in Formulas</a></li>
+							<li><a href="index_artigos.html">Artigos</a></li>
+							<li><a href="../index_anotacoes.html">Anotações</a></li>
+						</ul> 
+					</nav>
+				</div>
+				<div class="col">
+					<nav>
+					<p class="rodape_texto h3">Fique conectado !</p>
+						<ul> 
+							<li><a href="mailto:lcencicolo@gmail.com?subject="Contato do Site">Clique aqui para nos <br>enviar um e-mail!</a>
+							<li><a href="https://www.instagram.com/luancenci_1/?hl=pt-br" target="_blank">Instagram</a></li> 
+							<li><a href="https://www.linkedin.com/in/luan-cenci/" target="_blank">Linkedin</a></li> 
+							<li><a href="https://www.facebook.com/luan.cenci/" target="_blank">Facebook</a></li> 
+						</ul> 
+					</nav>
+				</div>
+				<div class="col">
+				   <p class="rodape_texto">Copyright © 2021 </p>
+				   <img src="../../imagem/assinatura.jpg" class = "rodape_assinatura" alt="...">
+				</div>
+			  </div>
+			</div>
+		</footer>
+
+    </body>
+</html>
+
