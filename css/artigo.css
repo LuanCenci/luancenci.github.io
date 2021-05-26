@@ -89,3 +89,11 @@
     margin-top: 20px;	
     vertical-align: top;
 }
+
+.cardTamanho{
+	max-width: 350px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+}
