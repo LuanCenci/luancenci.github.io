@@ -3,8 +3,9 @@ body {
 }
 
 #titulo {
-    font-family:Arial,Arial;
+    font-family: 'Times New Roman';
     font-weight: bold;
+	font-size: 18pt;
     text-align:center;
  }
 
@@ -32,12 +33,14 @@ body {
     font-size: 12pt;
     text-align: justify;
     font-style: italic;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .subtitulo
 { 
     font-family: 'Times New Roman';
-    font-size: medium;
+    font-size: 14pt;
     text-align: left;
     font-weight: bold;
     margin-left: 10%;
@@ -45,7 +48,7 @@ body {
 
 .texto
 {    
-    font-family: Arial;
+    font-family: 'Times New Roman';
     font-size: 14pt;
     text-align: justify;
     color: #000000;

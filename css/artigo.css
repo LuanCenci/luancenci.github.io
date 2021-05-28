@@ -31,10 +31,10 @@
 
 .rodape{
 	margin-top: 150px;
-	background-color:#4b87ac;
+	background-color:#003153;
 	/* background-image:url(../imagem/fundos/classic_blue.jpg); */
 	margin-top:15px;
-	border-top: 2px solid #4b87ac;
+	border: 2px solid white;
 	padding-top: 5px;
 }
 
