@@ -1,0 +1,46 @@
+.motores{
+	border: 3px solid gray;	
+	margin-left: 50px;
+}
+
+.motores_imagens{
+	border-top: 1px dashed black;
+	border-left: 1px dashed black;
+	border-right: 1px dashed black;
+	border-bottom: 1px dashed black;
+}
+
+.motores_imagens img{
+	min-width: 100px;
+	min-height: 200px;
+	max-width: 375px;
+	max-height: 231px;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+}
+
+.motores p{
+	font-size: 16px;
+	font-family: "Courier New";
+	text-align: center;
+}
+
+.imagem_quadrada{
+	max-height: 200px;
+	max-width: 200px;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	border: 1px solid black;
+}
+
+.aumenta_imagem{
+	min-height:200px;
+	min-width:300px;
+	width: 100%;
+	height: 100%;
+    clear: both;
+	vertical-align: top;
+	border: 3px dashed green;	
+}

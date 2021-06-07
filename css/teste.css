@@ -1,0 +1,132 @@
+table{
+	border: 2px solid black;
+	font-size: 250px;
+    border-radius: 25px;
+	padding:10px;
+	font-family: "Lucida Console";
+}
+
+td{
+	padding: 20px;
+}
+
+/* logo Cubo Rubik */
+
+#rubik_c{
+	background-image:url(../imagem/rubik/amarelo.jpg);
+	border: 2px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+#rubik_1o{
+	background-image:url(../imagem/rubik/azul.jpg);
+	border: 2px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+#rubik_1s{
+	background-image:url(../imagem/rubik/branco.jpg);
+	border: 2px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+#rubik_m{
+	background-image:url(../imagem/rubik/laranja.jpg);
+	border: 2px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+#rubik_2o{
+	background-image:url(../imagem/rubik/verde.jpg);
+	border: 2px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+#rubik_2s{
+	background-image:url(../imagem/rubik/vermelho.jpg);
+	border: 3px solid #FFFFFF;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+/* logo Power rangers */
+
+#PR_c{
+	background-color: yellow;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+#PR_1o{
+	background-color: blue;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+#PR_1s{
+	background-color: red;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+#PR_m{
+	background-color: pink;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+#PR_2o{
+	background-color: black;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+#PR_2s{
+	background-color: green;
+	border: 3px solid white;
+    border-radius: 25px;	
+	color: white;
+}
+
+.pintura{
+	border: 2px solid black;
+	font-size: 250px;
+    border-radius: 25px;
+	padding:10px;
+	font-family: "Lucida Console";
+	background-image:url(../imagem/fundo_vermelho_pintado.jpg);
+	border: 2px solid ;
+    border-radius: 25px;	
+	color: #FFFFFF;
+}
+
+.pionner{
+	border: 2px solid black;
+	font-size: 150px;
+    border-radius: 25px;
+	padding:10px;
+	font-family: "Lucida Console";
+	background-color: white;
+	border: 2px solid ;
+    border-radius: 25px;	
+	color: #000000;
+}
+
+.pionner img{
+	max-width: 550px;
+	max-height: 150px;
+	width: auto;
+	height: auto;
+	vertical-align: top;	
+}
+
