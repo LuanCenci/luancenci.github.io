@@ -1,0 +1,29 @@
+
+#titulo_artigo {
+	text-align: center;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 44px;
+	font-style: normal;
+	font-variant: normal; 
+	line-height: 26.4px; 
+}
+
+.primeira_imagem_box{
+	margin-left: 350px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 350px;
+}
+
+.primeira_imagem{
+	height: 350px;
+	width: 650px;
+	border:  1px solid #C0C0C0;
+}
+
+.moldura{
+	background-color: #FFFFFF;
+	background-image: url("../imagem/fundos/outra_cor.jpg");
+	border: 1px solid #D3D3D3;
+    padding: 15px;
+}
