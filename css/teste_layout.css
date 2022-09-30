@@ -1,29 +1,37 @@
+/* grade */
 
-#titulo_artigo {
-	text-align: center;
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-size: 44px;
-	font-style: normal;
-	font-variant: normal; 
-	line-height: 26.4px; 
+.caixote{
+	display: grid;
+	grid-template-columns: repeat(3,fr)
+	grid-auto-rows: 100px;
+	border: 1px solid blue;
 }
 
-.primeira_imagem_box{
-	margin-left: 350px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 350px;
+.caixote2{
+	display: grid;
+	grid-template-columns: repeat(3,fr)
+	grid-auto-rows: 100px;
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	border: 1px solid blue;
 }
 
-.primeira_imagem{
-	height: 350px;
-	width: 650px;
-	border:  1px solid #C0C0C0;
+/* caixas */
+.caixa1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+	z-index:2;
+	border: 1px solid green;
+	border-radius: 5px;
+	margin:10px;
 }
 
-.moldura{
-	background-color: #FFFFFF;
-	background-image: url("../imagem/fundos/outra_cor.jpg");
-	border: 1px solid #D3D3D3;
-    padding: 15px;
+.caixa2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+	border: 1px solid red;
+	border-radius: 5px;
 }
+
