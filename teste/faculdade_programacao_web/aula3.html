@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Aula 3 - Cascading Style Sheets</title>
+        <style type="text/css">
+            #para1{
+                text-align: center;
+                color: red;
+            }
+            .center{
+                text-align: center;
+                color: darkslateblue;
+            }
+            p{
+                font-size: 20px;
+            }
+
+        </style>
+    </header>
+    <body>
+        <h1 style="background-color: fuchsia; color: beige;">O que é CSS?</h1>
+        <p>O propósito do HTML é conter tags de formatação de documento, o HTML define o conteúdo do documento e como exibido:</p>
+        <img src="imagens/exemplo_html.jpg">
+
+        <p>Quando tags como &lt;font&gt; e atributos de cor foram adicionados à especificação HTML 3.2, começou um pesadelo para os desenvolvedores web. Para resolver este problema, o World Wide Web Consortium (W3C), especificou CSS.</p>
+        <p>Em HTML 4.0, toda a formatação pode ser removida do documento HTML e armazenada em um arquivo CSS separado. Todos os browsers suportam CSS hoje.</p>
+
+        <h2 style="color: fuchsia;">Benefícios do CSS</h2>
+        <p>CSS define como elementos HTML devem ser exibidos.</p>
+        <p>Estilos são normalmente guardados em arquivos externos .css.</p>
+        <p>Folhas de estilo externas permitem que você altere a aparência e o layout de todas as páginas de um site, apenas editando um único arquivo.</p>
+
+        <h2 style="color: fuchsia;">Sintaxe CSS</h2>
+        <p>Uma regra CSS tem duas partes principais</p>
+        <ul>
+            <li>Um seletor;</li>
+            <li>e uma ou mais declarações</li>
+        </ul>
+
+        <img src="imagens/exemplo_css.jpg">
+
+        <p>O seletor é normalmente o elemento HTML que você deseja criar o estilo</p>
+        <p>Cada declaração consiste uma propriedade e um valor.</p>
+        <p>A propriedade é o atributo de estilo que você deseja alterar.</p>
+        <p>Cada propriedade tem um valor.</p>
+
+        <img src="imagens/exemplo_css_2.jpg">
+        <img src="imagens/exemplo_css_3.jpg">
+
+        <h2 style="color: fuchsia;">CSS id e CSS classe</h2>
+        <p>Através do css você pode criar um estilo para um elemento do HTML, o css permite criar um estilo para um seletor através do id e class.</p>
+        <p>O id é usado para especificar um estilo para um elemento único, o seletor id é atribuído ao id do elemento HTML e definido com o caracter “#”.</p>
+        <b>Exemplo:</b><br>
+
+        <img src="imagens/exemplo_css_id.jpg"><br>
+        <b>Exemplo estilizado:</b>        
+
+        <p id="para1">Hello World!</p>
+        <p>Este não foi afetado pelo estilo.</p>
+
+        <h2 style="color: fuchsia;">Classe</h2>
+        <p>A classe é usada para especificar um estilo para um grupo de elementos, ela permite que você crie um estilo para vários elementos do HTML com a mesma classe.</p>
+        <b>Exemplo:</b><br>
+
+        <img src="imagens/exemplo_css_classe.jpg"><br>
+        <b>Exemplo estilizado:</b>        
+
+        <p class="center">Hello World!</p>
+        <p class="center">Este não foi afetado pelo estilo.</p>
+
+        <h2 style="color: fuchsia;">Estilo</h2>
+        <p>Existem trêes maneira de se utilizar o estilo:</p>
+
+        <ul>
+          <li>Estilo externo</li>
+          <li>Estilo interno</li>
+          <li>Estilo inline</li>
+        </ul>
+        <p>O estilo externo é ideal quando a formatação deve ser aplicado a várias páginas. Com um arquivo externo você pode alterar um formato e ele será automaticamente em todo o projeto.</p>
+        <p>Cada página deve ter um link para o estilo usando &lt;link&gt;, essa tag deve estar dentro da seção &lt;head&gt;</p>
+        <table style="border: 2px solid fuchsia; border-radius: 8px; padding: 20px 20px 20px 20px;">
+              <tr><td>&lt;head&gt;</td></tr>
+              <tr><td>&lt;link rel=”stylesheet” type=”text/css” href=”mystyle.css” /&gt;</td></tr>
+              <tr><td>&lt;/head&gt;</td></tr>
+        </table>
+
+
+
+
+    </body>
+</html>

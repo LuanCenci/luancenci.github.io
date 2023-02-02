@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Aula 2 - Elemento de HTML 5</title>
+    </header>
+    <body>
+        <h1 style="background-color: orange; color: white;">  O DOCTYPE</h1>
+        <p>O Doctype deve ser a primeira linha de código do documento antes da tag HTML.</p>
+        <img src="imagens/doctype.jpg">
+        <p>O Doctype indica para o navegador e para outros meios qual a especificação de código
+            utilizar. Em versões anteriores, era necessário referenciar o DTD diretamente no código do
+            Doctype. Com o HTML5, a referência por qual DTD utilizar é responsabilidade do Browser.</p>
+        <p>O Doctype não é uma tag do HTML, mas uma instrução para que o browser tenha informações sobre em qual versão de código a marcação foi escrita.</p>
+
+        <h1 style="background-color: orange; color: white;">Novos elementos do HTML 5</h1>
+        <table style="border: 2px solid orange;">
+            <tr>
+                <td style="border: 1px solid orange; background-color: orange; color: white;">Elemento</td>
+                <td style="border: 1px solid orange; background-color: orange; color: white;">Descrição</td>
+            </tr>
+            <tr><td> &lt;section&gt;</td><td>Representa um documento genérico ou seção da aplicação. Pode ser usado em conjunto com os elementos &lt;h1&gt, &lt;h2&gt, &lt;h3&gt, &lt;h4&gt, &lt;h5&gte &lt;h6&gt<br>para indicar a estrutura do documento   .</td></tr>
+            <tr><td> &lt;article&gt;</td><td>Representa uma peça independente do conteúdo de um documento, como um blog ou artigo de jornal</td></tr>
+            <tr><td> &lt;aside&gt;</td><td>Representa uma parte do conteúdo que é pouco relacionado com o resto da página</td></tr>
+            <tr><td> &lt;hgroup&gt;</td><td>Representa o cabeçalho de uma seção</td></tr>
+            <tr><td> &lt;header&gt;</td><td>Representa um grupo de introdução ou cabeçalho de uma seção</td></tr>
+            <tr><td> &lt;footer&gt;</td><td>Representa um rodapé de uma seção e pode conter informações sobre o autor, direitos autorais, etc</td></tr>
+            <tr><td> &lt;nav&gt; </td><td>Representa uma seção do documento destinada à navegação</td></tr>
+            <tr><td> &lt;figure&gt;</td><td>Representa uma parte do conteúdo de fluxo auto suficiente</td></tr>
+            <tr><td> &lt;figcaption&gt;</td><td>Representa um rótulo para o elemento &lt;figure&gt</td></tr>
+            <tr><td> &lt;audio&gt; e &lt;video&gt; </td><td>Representa conteúdos multimídias. Ambos fornecem uma API que pode ser acessada pelos desenvolvedores por scripts JavaScript</td></tr>
+            <tr><td> &lt;embed&gt;</td><td>Representa conteúdo incorporado, como um plugin</td></tr>
+            <tr><td> &lt;mark&gt;</td><td>Representa um texto marcado ou destacado para fins de referência</td></tr>
+            <tr><td> &lt;progress&gt;</td><td>Representa o estado de um trabalho em andamento ou a conclusão de uma tarefa como, por exemplo, um download.</td></tr>
+            <tr><td> &lt;meter&gt;</td><td>Representa uma medida, como uso do disco. Deve ser usada somente se os valores máximos e mínimos são conhecidos.</td></tr>
+            <tr><td> &lt;time&gt;</td><td>Para definir data, hora ou ambos.</td></tr>
+            <tr><td> &lt;ruby&gt;, &lt;rt&gt; e &lt;rp&gt;</td><td>Define a marcação de anotação para um texto base em idiomas orientais com o objetivo de definir a pronúncia correta do texto base ou informar sobre ele.</td></tr>
+            <tr><td> &lt;bdi&gt;</td><td>Representa o intervalo de texto que deve ser isolado de seu entorno para efeitos de formatação de texto bidirecional.</td></tr>
+            <tr><td> &lt;wbr&gt;</td><td>Representa uma oportunidade (possibilidade) de quebra de linha.</td></tr>
+            <tr><td> &lt;canvas&gt;</td><td>É utilizada para renderização de gráficos bitmap dinâmicos, como gráficos ou jogos. Isso é feito por meio de scripts JavaScript.</td></tr>
+            <tr><td> &lt;command&gt;</td><td>Representa um botão ou botão de opção, ou uma caixa de seleção que o usuário pode invocar.</td></tr>
+            <tr><td> &lt;details&gt;</td><td>Usado para descrever os detalhes de um documento ou partes dele.</td></tr>
+            <tr><td> &lt;datalist&gt;</td><td>Juntamente com o novo atributo list do elemento &lt;input&gt;, pode ser utilizado para criar caixas de combinação.</td></tr>
+            <tr><td> &lt;keygen&gt;</td><td>Permite gerar chaves para autenticar os usuários.</td></tr>
+            <tr><td> &lt;output&gt;</td><td>Representa os diferentes tipos de saída, como a saída escrita por um script.</td></tr>  
+        </table>
+
+        <h1 style="background-color: orange; color: white;">Áudio e Vídeo</h1>
+        
+        <h2 style="color: orange;">Áudio</h2>
+
+        <audio controls>
+            <source src="media/X2Download.app - Talking Heads - Psycho Killer (320 kbps).mp3" type="audio/mpeg">
+        </audio>
+        <br><br>
+
+        <h2 style="color: orange;">Vídeo</h2>
+
+        <video width="320" height="240" controls>
+            <source src="media/Talking Heads - Psycho Killer.mp4" type="video/mp4">
+        </video>
+        <br><br>
+
+        <video width="520" height="440" autoplay muted>
+            <source src="media/Talking Heads - Psycho Killer.mp4" type="video/mp4">
+        </video>
+        <br><br>
+
+        <video width="720" height="640" autoplay muted>
+            <source src="media/Talking Heads - Psycho Killer.mp4" type="video/mp4">
+        </video>
+        <br><br>
+
+        <video width="920" height="840" autoplay muted>
+            <source src="media/Talking Heads - Psycho Killer.mp4" type="video/mp4">
+        </video>
+        <br><br>
+
+        <video width="1020" height="940" autoplay muted>
+            <source src="media/Talking Heads - Psycho Killer.mp4" type="video/mp4">
+        </video>
+
+
+        <br><br>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+        <title>Aula 1 - O que é internet e HTML</title>
+    </head>
+    <body>
+        <h1 style="background-color: blue; color: white;">Alguns Exemplos HTML</h1>
+
+        <h2 style="color: mediumblue;"> Criação de Links</h2>
+        <p>A tag &lt;a&gt; define um hiperlink que é usado para ligar uma página para outra</p>
+        <p>O atributo mais importante do elemento é o atributo href, que indica o destino do link.</p>
+
+        <code>
+            <a href="url">Link Text</a>
+            <a href="http://www.youtube.com">YouTube</a>
+            <a href="http://www.youtube.com" target="_blank">YouTube</a>
+        </code>
+
+        <h2 style="color: mediumblue;">Criação de Tabelas</h2>
+        <p>A tag &lt;table&gt; define uma tabela em html. A tag &lt;table&gt; consiste em um elemento &lt;tr&gt; para indicar a linha e um elemento &lt;td&gt; para indicar a célula.</p>
+
+        <code>
+            <table border="1">
+                <tr>
+                    <td>Linha 1, célula 1</td>
+                    <td>Linha 1, célula 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 2, célula 1</td>
+                    <td>Linha 2, célula 2</td>
+                </tr>
+            </table>
+        </code>
+
+        <h2 style="color: mediumblue;">Criação de Listas</h2>
+
+        <code>
+            <ul>
+                <li>Café</li>
+                <li>Leite</li>
+            </ul>
+
+            <ol>
+                <li>Café</li>
+                <li>Leite</li>
+            </ol>
+        </code>
+        
+        <ul>
+            <li>&lt;ul&gt; - lista não ordenada</li>
+            <li>&lt;ol&gt; - lista ordenada</li>
+            <li>&lt;li&gt; - item de lista</li>
+        </ul>
+
+        <h2 style="color: mediumblue;">Criação de Listas</h2>
+        <p>A tag &lt;input&gt; especifica um campo de entrada onde o usuário pode inserir dados. Os &lt;input&gt; geralmente são utilizados dentro de &lt;form&gt;. </p>
+        <p>Um campo de entrada pode variar de muitas formas, dependendo do tipo de atributo</p>
+
+        <code>
+            <input type="text" name="firstname"/> <br>
+            <input type="text" name="lastname"/> <br>
+            <input type="password" name="pwd" /> <br> 
+            <input type="radio" name="sex" value="homem" /> Homem <br>
+            <input type="radio" name="sex" value="mulher" /> Mulher  <br>
+            <input type="checkbox" name="veiculo" value="Moto" /> Eu tenho Moto <br>
+            <input type="checkbox" name="veiculo" value="Carro" /> Eu tenho Carro <br><br>
+            <input type="submit" value="Submit">
+        </code>
+
+        <h2 style="color: mediumblue;">Caracteres especiais</h2>
+        <p>HTML permite que caracteres especiais sejam representados por sequencias de escape, indicadas por três partes: um & inicial, um número ou cadeia de caracteres correspondente ao caractere desejado, e um ; final.</p>
+        <p>Quatro caracteres ASCII - &lt;, &gt;, e & têm significados especiais em HTML, e são usados dentro de documentos seguindo a correspondência:</p>
+        
+        <img src="carecteresEspeciais.jpg"/>
+
+        <p>Outras sequências de escape suportam caracteres ISO Latin1. Aqui está uma tabela com os caracteres mais utilizados em Português:</p>
+        
+        <img src="caracteresEspeciaisIsoLatin.jpg"/>
+
+        <p>Como vemos, as sequências de escape são sensíveis à caixa. Os editores de HTML fazem essa tradução automaticamente.</p>
+        <p>Alguns editores, no entanto, mantêm a acentuação, sem usar as entidades de formatação. Quando isso acontece, deve-se inserir uma indicação do esquema de codificação ISO Latin1, escrevendo:</p>
+
+        <img src="meta_html.jpg">
+
+        <h1 style="background-color: blue; color: white;">Alguns Elementos Novos do HTML</h1>
+        
+        <h2 style="color: mediumblue;">Section</h2>
+
+        <p>Representa um documento genérico ou seção da aplicação. Pode ser usado em conjunto com elementos &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6> para indicar a estrutura do documento</p>
+        
+        <b>Exemplos:</b> <br>
+
+        <img src="section.jpg">
+
+        <section>
+            <h3>o que é desenvolvimentismo?</h3>
+            <p>O desenvolvimentismo é uma corrente econômica e política que surgiu na América Latina na década de 1950 e 1960, e que visava promover o desenvolvimento econômico dos países da região. A ideia central do desenvolvimentismo é que a economia deve ser estimulada por meio de investimentos em infraestrutura, pesquisa e desenvolvimento, e industrialização, com o objetivo de alcançar um crescimento econômico acelerado e sustentável.</p>
+            <p>O desenvolvimentismo foi implementado em vários países da América Latina, incluindo Brasil, Argentina e México, com o objetivo de aumentar a produção e a eficiência, além de modernizar a economia e elevar o padrão de vida da população. No entanto, o desenvolvimentismo também foi criticado por vários fatores, incluindo a concentração de renda e de riqueza, a dependência de recursos externos, e a desconsideração dos impactos sociais e ambientais do crescimento econômico.</p>
+            <p>Em geral, o desenvolvimentismo é visto como uma abordagem ambígua, que teve resultados mistos e é objeto de debates e análises polêmicas na atualidade. Alguns argumentam que o desenvolvimentismo é importante para promover o crescimento econômico e melhorar a qualidade de vida das pessoas, enquanto outros afirmam que ele é insuficiente para resolver os problemas estruturais da economia e da sociedade, e que precisa ser complementado com outras abordagens, como a promoção da justiça social e ambiental.</p>
+        </section>
+
+        <h2 style="color: mediumblue;">Article</h2>
+
+        <p>Representa uma peça independente do conteúdo de um documento, como um blog ou artigo de jornal.</p>
+        <img src="article.jpg">
+
+        <article>
+            <h3>o que é desenvolvimentismo?</h3>
+            <p>O desenvolvimentismo é uma corrente econômica e política que surgiu na América Latina na década de 1950 e 1960, e que visava promover o desenvolvimento econômico dos países da região. A ideia central do desenvolvimentismo é que a economia deve ser estimulada por meio de investimentos em infraestrutura, pesquisa e desenvolvimento, e industrialização, com o objetivo de alcançar um crescimento econômico acelerado e sustentável.</p>
+            <p>O desenvolvimentismo foi implementado em vários países da América Latina, incluindo Brasil, Argentina e México, com o objetivo de aumentar a produção e a eficiência, além de modernizar a economia e elevar o padrão de vida da população. No entanto, o desenvolvimentismo também foi criticado por vários fatores, incluindo a concentração de renda e de riqueza, a dependência de recursos externos, e a desconsideração dos impactos sociais e ambientais do crescimento econômico.</p>
+            <p>Em geral, o desenvolvimentismo é visto como uma abordagem ambígua, que teve resultados mistos e é objeto de debates e análises polêmicas na atualidade. Alguns argumentam que o desenvolvimentismo é importante para promover o crescimento econômico e melhorar a qualidade de vida das pessoas, enquanto outros afirmam que ele é insuficiente para resolver os problemas estruturais da economia e da sociedade, e que precisa ser complementado com outras abordagens, como a promoção da justiça social e ambiental.</p>            
+        </article>
+
+        <h2 style="color: mediumblue;">Aside</h2>
+
+        <p>Representa uma parte do conteúdo que é pouco relacionado com o resto da página</p>
+        <img src="aside.jpg">
+        <h3>o que é desenvolvimentismo?</h3>
+        <p>O desenvolvimentismo é uma corrente econômica e política que surgiu na América Latina na década de 1950 e 1960, e que visava promover o desenvolvimento econômico dos países da região. A ideia central do desenvolvimentismo é que a economia deve ser estimulada por meio de investimentos em infraestrutura, pesquisa e desenvolvimento, e industrialização, com o objetivo de alcançar um crescimento econômico acelerado e sustentável.</p>
+
+        <aside>
+            <h3>o que é o neo-desenvolvimentismo</h3>
+            <p>O neo-desenvolvimentismo é uma corrente econômica e política que surgiu na América Latina na década de 1990 e 2000, e que busca renovar e atualizar as ideias e práticas do desenvolvimentismo original. O neo-desenvolvimentismo reconhece as limitações e as críticas feitas ao desenvolvimentismo tradicional, e propõe uma abordagem mais integrada e equilibrada para o desenvolvimento econômico e social.</p>
+        </aside>
+
+        <h2 style="color: mediumblue;">Footer</h2>
+        <p>Representa um rodapé de uma seção e pode conter informações sobre o autor, direitos autorais etc.</p>
+        <img src="footer.jpg">
+
+        <footer>
+            <p>Direitos Autorais</p>
+            <p>2023</p>
+        </footer>
+
+        <h2 style="color: mediumblue;">Figure</h2>
+        <p>Representa uma parte do conteúdo de fluxo auto suficiente.</p>
+        <p>Serve para agrupar uma seção de conteúdo independente, como um vídeo ou uma imagem</p>
+        <img src="figure.jpg">
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Bresser_Pereira_%28cropped_2%29.jpg/200px-Bresser_Pereira_%28cropped_2%29.jpg">
+        </figure>
+    </body>
+</html>
+
